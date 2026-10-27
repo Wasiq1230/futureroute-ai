@@ -1,0 +1,32 @@
+{
+  "request_id": "demo-offline",
+  "best_route_id": "route-1",
+  "traffic_heatmap": [[33.62, 73.04, 0.35], [33.66, 73.045, 0.56], [33.69, 73.041, 0.42]],
+  "incidents": [
+    {"id": "demo-incident", "lat": 33.674, "lon": 73.042, "description": "Moderate roadwork impact detected."}
+  ],
+  "routes": [
+    {
+      "id": "route-1",
+      "name": "Route A",
+      "geometry": [{"lat": 33.5943, "lon": 73.0502}, {"lat": 33.66, "lon": 73.045}, {"lat": 33.7294, "lon": 73.0379}],
+      "distance_km": 17.8,
+      "duration_minutes": 27.5,
+      "score": {
+        "ai_score": 33.6,
+        "eta_minutes": 29.2,
+        "eta_confidence": 0.82,
+        "congestion_risk": 0.41,
+        "safety_risk": 0.24,
+        "weather_risk": 0.18,
+        "fuel_liters": 1.51,
+        "explanation": ["Low predicted congestion across sampled road segments.", "Safety model rates this corridor as comparatively stable.", "Fuel estimate is congestion-adjusted."]
+      },
+      "steps": [
+        {"instruction": "Head toward optimized corridor", "distance_m": 2400, "duration_s": 320},
+        {"instruction": "Continue on recommended arterial", "distance_m": 10400, "duration_s": 1200},
+        {"instruction": "Arrive at destination", "distance_m": 5000, "duration_s": 530}
+      ]
+    }
+  ]
+}

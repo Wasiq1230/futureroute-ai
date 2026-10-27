@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build & Distribution
+dist/
+build/
+.next/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.apk
+*.aab
+
+# Environment & Secrets
+.env
+.env*.local
+*.pem
+*.key
+*.pfx
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+.venv312/
+database/*.db
+database/*.sqlite
